@@ -44,7 +44,7 @@ a:hover {
 
 .main__input {
   border: 1px solid lightgray;
-  width: 565px;
+  max-width: 584px;
   padding: 5px;
   border-radius: 30px;
   margin-top: 20px;
@@ -53,7 +53,7 @@ a:hover {
 .main__input > input {
   padding: 10px 20px;
   margin: 0px 10px;
-  width: 487px;
+  width: 80%;
   border: none;
 }
 
@@ -123,6 +123,7 @@ a:hover {
     border-top: 1px solid #e4e4e4;
     display: flex;
     justify-content: space-between;
+    
 }
 
 .two__footer > a{
@@ -134,4 +135,28 @@ a:hover {
     color: rgba(0, 0, 0, 0.692);
     font: 15px;
     margin-right: 10px;
+}
+
+@media(max-width:500px){
+  .footer__two{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.two__footer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.three__footer{
+  text-align: center;
+}
+
+
+.main__input > input {
+  width: 75%;
+}
 }

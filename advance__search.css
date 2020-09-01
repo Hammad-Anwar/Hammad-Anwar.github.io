@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  outline: none;
+}
+
+a {
+  color: #000000de;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+}
+
+.header__logo img {
+  object-fit: contain;
+}
+.header__links {
+  display: flex;
+  align-items: center;
+}
+.header__links > i {
+  margin-right: 15px;
+}
+
+.header__links > i:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.header__links > img {
+  cursor: pointer;
+}
+
+.header___advance {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+}
+
+.footer__one {
+  background-color: #f2f2f2;
+  padding: 15px 20px;
+  border-top: 1px solid #e4e4e4;
+}
+
+.footer__one > p {
+  color: rgba(0, 0, 0, 0.54);
+  font: 15px;
+}
+
+.footer__two {
+  background-color: #f2f2f2;
+  padding: 15px 27px;
+  border-top: 1px solid #e4e4e4;
+  display: flex;
+  justify-content: space-between;
+}
+
+.two__footer > a {
+  color: rgba(0, 0, 0, 0.692);
+  margin-right: 10px;
+}
+
+.three__footer > a {
+  color: rgba(0, 0, 0, 0.692);
+  font: 15px;
+  margin-right: 10px;
+}
+
+@media (max-width: 500px) {
+  .footer__two {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .two__footer {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .three__footer {
+    text-align: center;
+  }
+}
+
+.main {
+  padding-left: 40px;
+  padding-right: 40px;
+  
+  margin-bottom: 10%;
+}
+
+.main__form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  padding-bottom: 10px;
+}
+
+.form__word {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px 10px;
+}
+
+.form__phrase {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px 10px;
+}
+
+.form__phrase input{
+    padding: 5px;
+  min-width: 18.7%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+label {
+  width: 200px;
+}
+
+input {
+  padding: 5px;
+  min-width: 40%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.main__heading {
+  color: #d93025;
+  margin: 25px 10px;
+  font-size: 20px;
+}
+
+.heading__two {
+  display: flex;
+  justify-content: space-between;
+  max-width: 70%;
+  padding: 10px 10px;
+  padding-bottom: 0;
+  color: gray;
+  font-size: 20px;
+}
+
+.hr__line{
+    margin: 30px 0;
+    border: 1px solid #e4e4e4;
+}
+
+.also__link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

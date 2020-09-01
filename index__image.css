@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  outline: none;
+}
+
+a {
+  color: #000000de;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: flex-end;
+}
+.header > i {
+  margin-right: 15px;
+}
+
+.header > i:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.header > img {
+  cursor: pointer;
+}
+
+.header___advance {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.main {
+  margin-top: 100px;
+}
+
+.main__input {
+  border: 1px solid lightgray;
+  max-width: 584px;
+  padding: 5px;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.main__input > input {
+  padding: 10px 20px;
+  margin: 0px 10px;
+  width: 70%;
+  border: none;
+}
+
+.main__input > #mic,
+#cam {
+  margin-right: 15px;
+  color: gray;
+}
+
+.main__input > #search {
+  margin-left: 10px;
+  color: gray;
+}
+
+.main__input:hover {
+  z-index: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.035),
+    0 6px 20px 0 rgba(0, 0, 0, 0.021);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer__one {
+  background-color: #f2f2f2;
+  padding: 15px 20px;
+  border-top: 1px solid #e4e4e4;
+}
+
+.footer__one > p {
+  color: rgba(0, 0, 0, 0.54);
+  font: 15px;
+}
+
+.footer__two {
+  background-color: #f2f2f2;
+  padding: 15px 27px;
+  border-top: 1px solid #e4e4e4;
+  display: flex;
+  justify-content: space-between;
+}
+
+.two__footer > a {
+  color: rgba(0, 0, 0, 0.692);
+  margin-right: 10px;
+}
+
+.three__footer > a {
+  color: rgba(0, 0, 0, 0.692);
+  font: 15px;
+  margin-right: 10px;
+}
+
+@media (max-width: 500px) {
+  .footer__two {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .two__footer {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .three__footer {
+    text-align: center;
+  }
+
+  .main__input > input {
+    width: 65%;
+  }
+}
+
+.logo__subtext {
+  color: #4285f4;
+  font: 16px/16px roboto-regular, arial, sans-serif;
+  position: relative;
+  top: -16px;
+  white-space: nowrap;
+}
+
+.logo__subtext span{
+  position: relative;
+  left: 102px;
+}
+
+.main__input > #search_btn {
+  margin-right: 10px;
+  color: #4285f4;
+  cursor: pointer;
+}
